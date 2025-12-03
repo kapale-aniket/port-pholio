@@ -1,24 +1,26 @@
-import { useState } from 'react';
-import Header from './component/Heder';
-import Banner from './component/Banner';
-import About from './component/About'
-import Skills from './component/Skills';
-import Footer from './component/Footer';
-
-
-
-import './App.css'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './styles/global.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-<Header />
-<Banner />
-<About/>
-<Skills/>
-<Footer />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   );
 }
